@@ -63,7 +63,10 @@ Find out more in the [Netlify CMS Docs](https://www.netlifycms.org/docs/#configu
 
 ## See also
 
-[Netlify CMS Docs](https://www.netlifycms.org/docs/)  
-[Netlify CMS Repo](https://github.com/netlify/netlify-cms)  
-[Hyperstatic](https://github.com/Jinksi/hyperstatic) – the same starter project minus Netlify CMS  
+[Netlify CMS Docs](https://www.netlifycms.org/docs/)
+[Netlify CMS Repo](https://github.com/netlify/netlify-cms)
+[Hyperstatic](https://github.com/Jinksi/hyperstatic) – the same starter project minus Netlify CMS
 [Gatsby + Netlify CMS Starter](https://github.com/AustinGreen/gatsby-starter-netlify-cms)
+
+Module image texte avec option is reversed et possibilité d'avoir seulement texte ou image
+Module image avec option "pleine largeur"
