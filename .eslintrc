@@ -2,6 +2,7 @@
   "extends": ["react-app", "plugin:jsx-a11y/recommended"],
   "plugins": ["jsx-a11y"],
   "rules": {
+    "semi": ["error", "always"],
     "eol-last": ["error", "always"],
     "object-curly-spacing": ["error", "always"],
     "space-before-function-paren": ["error", "never"],

@@ -1,9 +1,9 @@
-import React, { Component, Fragment } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import React, { Component, Fragment } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import TestComponent from './components/TestComponent'
+import TestComponent from './components/TestComponent';
 
-import data from './data.json'
+import data from './data.json';
 
 const RouteWithMeta = ({ component: Component, ...props }) => (
   <Route
@@ -14,7 +14,7 @@ const RouteWithMeta = ({ component: Component, ...props }) => (
       </Fragment>
     )}
   />
-)
+);
 
 class App extends Component {
   state = {
@@ -28,14 +28,19 @@ class App extends Component {
   getDocuments = collection => this.state.data[collection] || []
 
   render() {
+    const countries = this.getDocuments('countries');
+
     return (
       <Router>
         <div className='React-Wrap'>
+          {countries.map((countrie) => {
+            return countrie.title;
+          })}
           <TestComponent />
         </div>
       </Router>
-    )
+    );
   }
 }
 
-export default App
+export default App;
