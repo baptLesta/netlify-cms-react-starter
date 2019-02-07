@@ -65,3 +65,18 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Twitter Creator Account, name: twitterCreatorAccount, widget: string, required: false}
           - {label: Header Meta / Scripts, name: headerScripts, widget: text, required: false}
           - {label: Enable Service Worker Pre-Cache, name: enableServiceWorker, widget: boolean, required: false}
+      - file: "content/settings/ui.yml"
+        label: "UI"
+        name: "ui"
+        fields:
+          - label: Top Bar
+            name: topBar
+            widget: object
+            fields:
+              - {label: Introduction (sans le 'Sauvage'), name: intro, widget: string}
+              - label: Liens
+                name: links
+                widget: list
+                fields: 
+                  - {label: Libellé, name: label, widget: string}
+                  - {label: Lien, name: link, widget: string} 
