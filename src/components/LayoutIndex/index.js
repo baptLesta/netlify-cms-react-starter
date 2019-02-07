@@ -1,16 +1,30 @@
 import React from 'react';
-import css from './styles.scss';
 import HomeHero from '../HomeHero';
+import CountryHero  from '../CountryHero';
+import PageScroller from '../PageScroller';
 
 const LayoutIndex = (props) => {
+  const {
+    home,
+    countries
+  } = props;
+
+  const CountriesHero = countries.map( (country, i) => (
+    <CountryHero
+      className='section'
+      imageSrc={country.imageCover}
+      key={i} />
+  ));
+
   return (
-    <div className={css.component}>
-      <HomeHero
-        imageSrc={}
-      />
-      <CountryHero
-        imageSrc={}
-      />
+    <div>
+      <PageScroller>
+        <HomeHero
+          className='section'
+          imageSrc={home.imageCover}
+        />
+        {CountriesHero}
+      </PageScroller>
     </div>
   );
 };

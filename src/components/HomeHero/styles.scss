@@ -1,8 +1,21 @@
-// @import "~global-scss/index.scss";
+@import "~global-scss/index.scss";
+
 
 :local(.component) {
-  --color: blue;
   width: 100vw;
-  height: 100vw;
-  background-color: --color;
+  height: 100vh;
+}
+
+.slide-hero {
+  position: fixed;
+
+  // ~> IS HIDDEN
+  opacity: 0;
+  transition: opacity 300ms;
+
+  // ~> IS VISIBLE
+  &.is-visible {
+    transition: opacity 700ms;
+    opacity: 1;
+  }
 }

@@ -1,5 +1,7 @@
-// @import "~global-scss/index.scss";
+@import "~global-scss/index.scss";
 
 :local(.component) {
-  /* TODO */
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
 }

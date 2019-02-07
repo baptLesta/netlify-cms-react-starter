@@ -2,14 +2,16 @@ import React from 'react';
 import css from './styles.scss';
 import propTypes from 'prop-types';
 
-const HomeHero = props => {
-  const bgImageInlineStyle = { backgroundImage: `url(${props.imageSrc})` };
+class HomeHero extends React.Component {
+  render() {
+    const bgImageInlineStyle = { backgroundImage: `url(${this.props.imageSrc})` };
 
-  return (
-    <div className={css.component} style={ bgImageInlineStyle }>
-      coucou
-    </div>
-  );
+    return (
+      <div ref="$component" className={css.component} style={ bgImageInlineStyle }>
+        coucou
+      </div>
+    );
+  }
 };
 
 HomeHero.propTypes = {

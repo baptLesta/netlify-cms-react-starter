@@ -29,16 +29,14 @@ class App extends Component {
 
   render() {
     const countries = this.getDocuments('countries');
+    const home = this.getDocuments('home')[0];
 
     return (
       <Router>
         <div className='React-Wrap'>
-          {countries.map((countrie) => {
-            return countrie.title;
-          })}
-          <LayoutIndex 
+          <LayoutIndex
             countries={countries}
-
+            home={home}
           />
         </div>
       </Router>
