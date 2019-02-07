@@ -1,0 +1,8 @@
+// @import "~global-scss/index.scss";
+
+:local(.component) {
+  --color: blue;
+  width: 100vw;
+  height: 100vw;
+  background-color: --color;
+}

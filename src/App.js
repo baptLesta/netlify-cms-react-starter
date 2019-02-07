@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import TestComponent from './components/TestComponent';
+import LayoutIndex from './components/LayoutIndex';
 
 import data from './data.json';
 
@@ -36,7 +36,10 @@ class App extends Component {
           {countries.map((countrie) => {
             return countrie.title;
           })}
-          <TestComponent />
+          <LayoutIndex 
+            countries={countries}
+
+          />
         </div>
       </Router>
     );

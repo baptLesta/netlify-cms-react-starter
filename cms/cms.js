@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; // eslint-disable-line
 
 import '../src/globalStyles.css';
 import data from '../src/data.json';
