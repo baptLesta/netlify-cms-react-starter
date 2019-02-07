@@ -101,6 +101,6 @@ collections: # A list of collections the CMS should be able to edit
                 name: title
                 widget: object
                 fields:
-                  - {label: Partie supérieur, name: top, widget: String, required: true}
-                  - {label: Partie inférieur, name: bottom, widget: String, required: true}
-              - {label: Sous-titre, name: subtitle, widget: String}
+                  - {label: Partie supérieur, name: top, widget: string, required: true}
+                  - {label: Partie inférieur, name: bottom, widget: string, required: true}
+              - {label: Sous-titre, name: subtitle, widget: string}
