@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 
 import Logo from './Logo'
 import NavLink from './NavLink'
+import NavQuote from './NavQuote'
+
 import './Nav.css'
 
 export default ({ handlePopupOpen }) => (
@@ -11,6 +13,7 @@ export default ({ handlePopupOpen }) => (
       <Link to='/'>
         <Logo />
       </Link>
+      <NavQuote />
       <NavLink to='/' exact>
         Home
       </NavLink>

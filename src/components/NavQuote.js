@@ -22,7 +22,7 @@ class NavQuote extends Component {
   render () {
     return (
       <div className={css.component} dev-component='NavQuote'>
-        
+        coucou
       </div>
     )
   }
